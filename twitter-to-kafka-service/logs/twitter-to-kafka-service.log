@@ -1,11 +1,27 @@
-2024-09-15 14:14:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 15844 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
-2024-09-15 14:14:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-15 14:14:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.347 seconds (process running for 4.07)
-2024-09-15 14:14:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
-2024-09-15 14:14:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2024-09-15 14:19:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 15772 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
-2024-09-15 14:19:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-15 14:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.151 seconds (process running for 3.626)
-2024-09-15 14:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
-2024-09-15 14:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2024-09-15 14:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-17 13:47:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 18708 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-17 13:47:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 13:47:45 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-09-17 13:47:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-17 13:47:45 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
+2024-09-17 13:51:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 12460 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-17 13:51:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.205 seconds (process running for 3.338)
+2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
