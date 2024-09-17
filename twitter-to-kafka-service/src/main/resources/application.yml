@@ -6,7 +6,7 @@ twitter-to-kafka-service:
     - Kafka
     - Elasticsearch
   welcome-message: Hello Microservices
-  enable-v2-tweets: true
+  enable-v2-tweets: false
   twitter-v2-base-url: https://api.x.com/2/tweets/search/stream?tweet.fields=created_at&expansions=auther_id
   twitter-v2-rules-base-url: https://api.x.com/2/tweets/search/stream/rules
   twitter-v2-bearer-token: ${TWITTER_BEARER_TOKEN}
