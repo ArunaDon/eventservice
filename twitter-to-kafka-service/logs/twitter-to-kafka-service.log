@@ -87,3 +87,12 @@ Caused by: twitter4j.JSONException: Expected literal value at character 160 of {
 2024-09-23 10:52:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer Lorem elit pulvinar Kafka pulvinar Lorem
 2024-09-23 10:52:38 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem posuere Maecenas ultricies Microservices Fusce Fusce
 2024-09-23 10:52:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas magna libero consectetuer Maecenas Microservices ipsum porttitor purus
+2024-09-23 16:22:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 20956 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-23 16:22:59 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-23 16:23:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.543 seconds (process running for 4.252)
+2024-09-23 16:23:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-23 16:23:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 16:23:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-23 16:23:01 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 16:23:01 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor consectetuer elit massa congue Spring porttitor porttitor Maecenas posuere
+2024-09-23 16:23:11 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit massa magna elit Kafka elit libero
