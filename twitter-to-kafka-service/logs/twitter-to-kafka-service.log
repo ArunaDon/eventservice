@@ -1,76 +1,89 @@
-2024-09-17 13:47:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 18708 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
-2024-09-17 13:47:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-17 13:47:45 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2024-09-17 13:47:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-17 13:47:45 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
-
-2024-09-17 13:51:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 12460 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
-2024-09-17 13:51:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.205 seconds (process running for 3.338)
-2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
-2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2024-09-17 13:51:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
-2024-09-17 17:13:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 15452 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
-2024-09-17 17:13:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-17 17:13:34 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]
-2024-09-17 17:13:34 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:510)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:351)
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:277)
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:30)
-Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:564)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:547)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:471)
-	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed
-	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:186)
-	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
-	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
-	... 25 common frames omitted
-Caused by: org.springframework.expression.spel.SpelParseException: Expression [false && not ${twitter-to-kafka-service.enable-mock-tweets}] @14: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
-	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:144)
-	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:63)
-	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:34)
-	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:125)
-	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:66)
-	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52)
-	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:164)
-	... 28 common frames omitted
+2024-09-23 10:17:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 23804 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-23 10:17:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-23 10:17:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.321 seconds (process running for 8.663)
+2024-09-23 10:17:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-23 10:17:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:17:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-23 10:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 2388 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-23 10:19:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-23 10:19:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.829 seconds (process running for 4.078)
+2024-09-23 10:19:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-23 10:19:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:19:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-23 10:19:50 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:19:50 [pool-2-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - error creating twitter status!
+twitter4j.TwitterException: Expected literal value at character 157 of {"created_at":"Mon Sep 23 10:19:50 CEST 2024","id":"8174674733470426262","text":"sed nisl sem Elasticsearch lorem. augue","user":{"id":"3937753980762262992",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:75)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: twitter4j.JSONException: Expected literal value at character 157 of {"created_at":"Mon Sep 23 10:19:50 CEST 2024","id":"8174674733470426262","text":"sed nisl sem Elasticsearch lorem. augue","user":{"id":"3937753980762262992",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:418)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 6 common frames omitted
+2024-09-23 10:42:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 23608 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-23 10:42:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-23 10:42:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.311 seconds (process running for 3.582)
+2024-09-23 10:42:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-23 10:42:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:42:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-23 10:42:22 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:42:22 [pool-2-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - error creating twitter status!
+twitter4j.TwitterException: Expected literal value at character 160 of {"created_at":"Mon Sep 23 10:42:22 CEST 2024","id":"3742883628598338655","text":"sagittis adipiscing id Kafka iaculis neque","user":{"id":"2481456799367273732",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:75)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: twitter4j.JSONException: Expected literal value at character 160 of {"created_at":"Mon Sep 23 10:42:22 CEST 2024","id":"3742883628598338655","text":"sagittis adipiscing id Kafka iaculis neque","user":{"id":"2481456799367273732",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:418)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 6 common frames omitted
+2024-09-23 10:49:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.9 with PID 17080 (C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo\twitter-to-kafka-service\target\classes started by Dana in C:\Users\Dana\Desktop\eventservice\srcbase\microservice.demo)
+2024-09-23 10:49:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-23 10:49:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.36 seconds (process running for 3.651)
+2024-09-23 10:49:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Aplication starts....
+2024-09-23 10:49:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:49:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices
+2024-09-23 10:49:37 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-09-23 10:49:38 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar elit sed consectetuer malesuada Elasticsearch sit pulvinar Lorem
+2024-09-23 10:49:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies posuere sed Maecenas Microservices pulvinar sit
+2024-09-23 10:49:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna pulvinar elit purus libero posuere Elasticsearch dolor amet congue magna elit
+2024-09-23 10:50:08 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed congue porttitor Lorem lectus Kafka dolor ultricies amet congue
+2024-09-23 10:50:18 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas Maecenas magna sit dolor malesuada amet Elasticsearch ipsum consectetuer ipsum Lorem porttitor Fusce
+2024-09-23 10:50:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus Lorem Lorem ultricies sed ultricies magna libero Microservices adipiscing congue ipsum ipsum lectus sed
+2024-09-23 10:50:38 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar pulvinar amet consectetuer ultricies libero sit Kafka porttitor congue magna Maecenas Maecenas posuere
+2024-09-23 10:50:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit elit congue Microservices porttitor consectetuer
+2024-09-23 10:50:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum purus consectetuer posuere Spring Maecenas consectetuer
+2024-09-23 10:51:08 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum sit libero dolor sed massa Spring lectus dolor elit posuere elit
+2024-09-23 10:51:18 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa adipiscing pulvinar Lorem Spring malesuada amet
+2024-09-23 10:51:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue dolor sit Elasticsearch ipsum porttitor
+2024-09-23 10:51:38 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing sed ipsum amet Fusce Spring Maecenas dolor malesuada ultricies
+2024-09-23 10:51:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum magna consectetuer ultricies libero massa sed Spring magna adipiscing congue lectus malesuada
+2024-09-23 10:51:58 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum libero malesuada sed pulvinar Elasticsearch porttitor amet Maecenas porttitor
+2024-09-23 10:52:08 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus magna ultricies Fusce Maecenas Microservices massa ultricies adipiscing
+2024-09-23 10:52:18 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem magna posuere Kafka amet congue
+2024-09-23 10:52:28 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer Lorem elit pulvinar Kafka pulvinar Lorem
+2024-09-23 10:52:38 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem posuere Maecenas ultricies Microservices Fusce Fusce
+2024-09-23 10:52:48 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas magna libero consectetuer Maecenas Microservices ipsum porttitor purus
