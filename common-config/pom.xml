@@ -7,19 +7,18 @@
         <groupId>com.microservice.demo</groupId>
         <artifactId>microservice.demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kafka-admin</artifactId>
+    <artifactId>common-config</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>com.microservice.demo</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
         </dependency>
     </dependencies>
-
 </project>
