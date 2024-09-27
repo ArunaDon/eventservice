@@ -42,11 +42,7 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.microservice.demo</groupId>
-            <artifactId>app-config-data</artifactId>
-        </dependency>
-
+        
     </dependencies>
 
 </project>
