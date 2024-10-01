@@ -2,8 +2,8 @@ package com.microservices.demo.twitter.to.kafka.service.listener;
 
 import com.microservices.demo.config.KafkaConfigData;
 import com.microservices.demo.kafka.avro.model.TwitterAvroModel;
+import com.microservices.demo.kafka.producer.config.service.KafkaProducer;
 import com.microservices.demo.twitter.to.kafka.service.transformer.TwitterStatusToAvroTransformer;
-import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,9 +37,6 @@ public class TwitterKafkaStatusListener extends StatusAdapter {
     public void onStatus(Status status) {
         LOG.info("Twitter status with text {}", status.getText(), kafkaConfigData.getTopicName());
         TwitterAvroModel twitterAvroModel = twitterStatusToAvroTransformer.getTwitterAvroModelFromStatus(status);
-        kafkaProducer.send(kafkaConfigData.getTopicName(),
-                twitterAvroModel.getUserId(),
-                twitterAvroModel);
-
+        kafkaProducer.send(kafkaConfigData.getTopicName(),twitterAvroModel.getUserId(),twitterAvroModel);
     }
 }
