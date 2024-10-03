@@ -23,6 +23,8 @@ public class TwitterKafkaProducer  implements KafkaProducer<Long, TwitterAvroMod
         this.kafkaTemplate = kafkaTemplate;
     }
 
+
+
     @Override
     public void send(String topicName, Long key, TwitterAvroModel message) {
         LOG.info("Sending message='{}'  to topic='{}'",message,topicName);

@@ -50,7 +50,7 @@
 		<slf4j-api.version>2.0.16</slf4j-api.version>
 		<spring-webflux.version>6.1.13</spring-webflux.version>
 		<kafka-avro-serializer.version>7.3.1</kafka-avro-serializer.version>
-		<!-- 	<spring-aop.version>6.1.13</spring-aop.version> -->
+		<spring-aop.version>6.1.13</spring-aop.version>
 	</properties>
         <dependencyManagement>
             <dependencies>
@@ -149,12 +149,12 @@
 				<artifactId>spring-retry</artifactId>
 				<version>${spring-retry.version}</version>
 			</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop
+				<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
                 <dependency>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-aop</artifactId>
                     <version>${spring-aop.version}</version>
-                </dependency> -->
+                </dependency>
 				<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 				<dependency>
 					<groupId>org.slf4j</groupId>
@@ -167,6 +167,13 @@
 					<artifactId>spring-webflux</artifactId>
 					<version>${spring-webflux.version}</version>
 				</dependency>
+				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-reactor-netty -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-reactor-netty</artifactId>
+					<version>3.3.4</version>
+				</dependency>
+
 				<!-- https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer -->
 				<dependency>
 					<groupId>io.confluent</groupId>
@@ -190,6 +197,11 @@
 							<artifactId>swagger-core</artifactId>
 						</exclusion>
 					</exclusions>
+				</dependency>
+				<dependency>
+					<groupId>org.aspectj</groupId>
+					<artifactId>aspectjweaver</artifactId>
+					<version>1.9.7</version> <!-- You can use the latest stable version -->
 				</dependency>
 			</dependencies>
 	</dependencyManagement>
