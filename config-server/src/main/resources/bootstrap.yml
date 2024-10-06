@@ -1,0 +1,18 @@
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ArunaDon/spring-cloud-config-server-repository
+          username: arunadon
+          password: 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
+          clone-on-start: true
+      bootstrap: true
+    fail-fast: true
