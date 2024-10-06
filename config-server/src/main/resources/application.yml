@@ -15,13 +15,17 @@ spring:
         git:
           uri: https://github.com/ArunaDon/spring-cloud-config-server-repository
           username: arunadon
-          password: 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
+          password: ENC(5nmAMqphQFk6FJqJq7gYcfyzH1DPiGCP7sKi0gwKipDC6iUGhhvtC92ir1WxChMY7My6biptnqnO1sOyKBa/WV1Fe3BZ8b9jJnrAdFoyWao=)
           clone-on-start: true
       bootstrap: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(mSn13kz4jq4T8AjFgCE1SJdc810z2/W5otyN6/UQZj+zWRyTNKTo+fwuE+fOmxDvmSo7Exw6PIcS9AFVtyyJGA==)
+
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020
 
 
