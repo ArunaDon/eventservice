@@ -113,3 +113,198 @@
 2024-10-06 15:58:22 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\Dana\AppData\Local\Temp\config-repo-1181633193927395788\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/Dana/AppData/Local/Temp/config-repo-1181633193927395788/'
 2024-10-06 15:58:22 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\Dana\AppData\Local\Temp\config-repo-1181633193927395788\config-client.yml]' via location 'file:/C:/Users/Dana/AppData/Local/Temp/config-repo-1181633193927395788/'
 2024-10-06 16:07:20 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\Dana\AppData\Local\Temp\config-repo-1181633193927395788\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
+2024-10-13 16:38:31 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.server.git.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils.decrypt(TextEncryptorUtils.java:52)
+	at org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor.postProcessEnvironment(DecryptEnvironmentPostProcessor.java:66)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:214)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143)
+	... 24 common frames omitted
+2024-10-13 16:39:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136)
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils.decrypt(TextEncryptorUtils.java:52)
+	at org.springframework.cloud.bootstrap.encrypt.DecryptEnvironmentPostProcessor.postProcessEnvironment(DecryptEnvironmentPostProcessor.java:66)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:214)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143)
+	... 24 common frames omitted
+2024-10-13 16:43:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 16:43:08 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 7312 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 16:43:08 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 16:43:09 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a71b3b11-689f-3ed8-8b9f-ce6dcb5b4409
+2024-10-13 16:43:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-13 16:43:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-13 16:43:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-13 16:43:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-13 16:43:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-13 16:43:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1279 ms
+2024-10-13 16:43:10 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-13 16:43:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-13 16:43:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-13 16:43:13 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.226 seconds (process running for 5.761)
+2024-10-13 16:43:41 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 16:43:41 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-13 16:43:41 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-13 16:43:42 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-12972259758632550719\config-client.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-12972259758632550719/'
+2024-10-13 16:43:43 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-12972259758632550719\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-12972259758632550719/'
+2024-10-13 16:43:43 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-12972259758632550719\config-client.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-12972259758632550719/'
+2024-10-13 16:50:16 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\danan\AppData\Local\Temp\config-repo-12972259758632550719\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
+2024-10-13 17:11:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 17:11:13 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 22256 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 17:11:13 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 17:11:14 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'configure' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/microservice/demo/config/server/config/SecurityConfig.class]
+2024-10-13 17:11:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-13 17:11:14 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'configure' must not be declared as void; change the method's return type or its annotation.
+Offending resource: class path resource [com/microservice/demo/config/server/config/SecurityConfig.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:47)
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:219)
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+2024-10-13 17:21:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 17:21:40 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 5252 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 17:21:40 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 17:21:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-13 17:21:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-13 17:21:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:21:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-13 17:21:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-13 17:21:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-13 17:21:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1316 ms
+2024-10-13 17:21:41 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-13 17:21:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:21:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-13 17:21:44 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.179 seconds (process running for 5.724)
+2024-10-13 17:21:55 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 17:21:55 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-13 17:21:55 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-13 17:23:46 [http-nio-8888-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,org.springframework.http.MediaType)]
+2024-10-13 17:24:05 [http-nio-8888-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,org.springframework.http.MediaType)]
+2024-10-13 17:24:07 [http-nio-8888-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,org.springframework.http.MediaType)]
+2024-10-13 17:25:09 [http-nio-8888-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,org.springframework.http.MediaType)]
+2024-10-13 17:25:16 [http-nio-8888-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-10-13 17:25:26 [http-nio-8888-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-10-13 17:25:59 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.EncryptionController - Encrypted data
+2024-10-13 17:26:44 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.EncryptionController - Decrypted cipher data
+2024-10-13 17:28:50 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.EncryptionController - Decrypted cipher data
+2024-10-13 17:33:39 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\danan\AppData\Local\Temp\config-repo-14951499534797274586\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
+2024-10-13 17:34:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 17:34:09 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 22248 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 17:34:09 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 17:34:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-13 17:34:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-13 17:34:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:34:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-13 17:34:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-13 17:34:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-13 17:34:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1296 ms
+2024-10-13 17:34:11 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-13 17:34:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:34:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-13 17:34:13 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.857 seconds (process running for 5.399)
+2024-10-13 17:34:27 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 17:34:27 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-13 17:34:27 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-13 17:35:53 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\danan\AppData\Local\Temp\config-repo-3481328787302144920\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
+2024-10-13 17:36:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 17:36:24 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 17680 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 17:36:24 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 17:36:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-13 17:36:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-13 17:36:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:36:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-13 17:36:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-13 17:36:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-13 17:36:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1238 ms
+2024-10-13 17:36:25 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-13 17:36:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:36:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-13 17:36:28 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.681 seconds (process running for 5.261)
+2024-10-13 17:36:38 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 17:36:38 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-13 17:36:38 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-13 17:39:14 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\danan\AppData\Local\Temp\config-repo-8502682353808837335\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
+2024-10-13 17:40:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-13 17:40:08 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 14520 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
+2024-10-13 17:40:08 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-13 17:40:09 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-13 17:40:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-13 17:40:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:40:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-13 17:40:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-13 17:40:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-13 17:40:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
+2024-10-13 17:40:10 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-13 17:40:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-13 17:40:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-13 17:40:12 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.565 seconds (process running for 5.061)
+2024-10-13 17:40:26 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 17:40:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-13 17:40:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-13 17:40:27 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-7472392565475806206\config-client.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-7472392565475806206/'
+2024-10-13 17:40:28 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-7472392565475806206\config-client-twitter_to_kafka.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-7472392565475806206/'
+2024-10-13 17:40:28 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\danan\AppData\Local\Temp\config-repo-7472392565475806206\config-client.yml]' via location 'file:/C:/Users/danan/AppData/Local/Temp/config-repo-7472392565475806206/'
+2024-10-13 17:45:46 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\danan\AppData\Local\Temp\config-repo-7472392565475806206\.git\objects\pack\pack-b6e33969e16f641f31346408cc6d65380c2091c1.idx
