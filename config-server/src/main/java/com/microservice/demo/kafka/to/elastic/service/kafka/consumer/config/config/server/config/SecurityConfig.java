@@ -1,4 +1,4 @@
-package com.microservice.demo.config.server.config;
+package com.microservice.demo.kafka.to.elastic.service.kafka.consumer.config.config.server.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

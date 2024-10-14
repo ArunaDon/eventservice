@@ -139,7 +139,7 @@ java.lang.IllegalStateException: Cannot decrypt: key=spring.cloud.config.server.
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at server.config.com.microservice.demo.kafka.consumer.config.ConfigServer.main(ConfigServer.java:11)
 Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
 	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:214)
 	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143)
@@ -170,7 +170,7 @@ java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.passwo
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at server.config.com.microservice.demo.kafka.consumer.config.ConfigServer.main(ConfigServer.java:11)
 Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
 	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:214)
 	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143)
@@ -223,7 +223,7 @@ Offending resource: class path resource [com/microservice/demo/config/server/con
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.microservice.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at server.config.com.microservice.demo.kafka.consumer.config.ConfigServer.main(ConfigServer.java:11)
 2024-10-13 17:21:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
 2024-10-13 17:21:40 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.12 with PID 5252 (C:\Users\danan\Desktop\dev\config-server\target\classes started by danan in C:\Users\danan\Desktop\dev)
 2024-10-13 17:21:40 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
