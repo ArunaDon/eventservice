@@ -1,34 +1,90 @@
-2024-10-13 21:14:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-10-13 21:14:58 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
-2024-10-13 21:14:58 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2024-10-13 21:15:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
-2024-10-13 21:15:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
-2024-10-13 21:15:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-10-13 21:15:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-10-13 21:15:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-10-13 21:15:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-10-13 21:15:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2369 ms
-2024-10-13 21:15:01 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-10-13 21:15:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-10-13 21:15:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
-2024-10-13 21:15:09 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 11.831 seconds (process running for 12.645)
-2024-10-13 21:15:11 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 21:15:11 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-10-13 21:15:11 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-10-13 21:24:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-10-13 21:24:50 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
-2024-10-13 21:24:50 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2024-10-13 21:24:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
-2024-10-13 21:24:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
-2024-10-13 21:24:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2024-10-13 21:24:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-10-13 21:24:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-10-13 21:24:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-10-13 21:24:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2659 ms
-2024-10-13 21:24:53 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-10-13 21:25:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2024-10-13 21:25:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
-2024-10-13 21:25:01 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 12.158 seconds (process running for 13.146)
-2024-10-13 21:25:03 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 21:25:03 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-10-13 21:25:03 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-15 08:10:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 08:10:52 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-10-15 08:10:52 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 08:10:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-15 08:10:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-15 08:10:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:10:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 08:10:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-15 08:10:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 08:10:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2141 ms
+2024-10-15 08:10:55 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-15 08:11:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:11:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-15 08:11:00 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Started ConfigServer in 9.174 seconds (process running for 9.928)
+2024-10-15 08:11:01 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-15 08:11:01 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-15 08:11:01 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-15 08:18:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 08:18:41 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-10-15 08:18:41 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 08:18:43 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-15 08:18:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-15 08:18:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:18:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 08:18:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-15 08:18:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 08:18:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1836 ms
+2024-10-15 08:18:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-15 08:18:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:18:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-15 08:18:46 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Started ConfigServer in 5.809 seconds (process running for 6.373)
+2024-10-15 08:18:48 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-15 08:18:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-15 08:18:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-15 08:36:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-15 08:36:13 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Starting ConfigServer v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2024-10-15 08:36:13 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2024-10-15 08:36:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd844037-3a3d-3c99-a9ec-79672dd4090d
+2024-10-15 08:36:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2024-10-15 08:36:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:36:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 08:36:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-15 08:36:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 08:36:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2530 ms
+2024-10-15 08:36:16 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-15 08:36:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2024-10-15 08:36:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2024-10-15 08:36:22 [main] INFO  c.m.d.k.t.e.s.k.c.c.c.s.ConfigServer - Started ConfigServer in 10.309 seconds (process running for 11.21)
+2024-10-15 08:36:23 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-15 08:36:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-15 08:36:23 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-15 09:09:12 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:09:13 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:09:13 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:15:06 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:15:08 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:15:08 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:17:43 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:17:44 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:17:44 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:21:17 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:21:18 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:21:18 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:26:16 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:26:17 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:26:17 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:33:08 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:33:09 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:33:09 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:37:46 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:37:47 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:37:47 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:44:26 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:44:27 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:44:27 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:49:13 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:49:14 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:49:14 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:50:10 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:50:11 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 09:50:11 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:13:20 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:13:21 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:13:21 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:15:43 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:15:44 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 10:15:44 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 11:01:17 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 11:01:18 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client-kafka_to_elastic.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
+2024-10-15 11:01:18 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-37432486749680514/config-client.yml]' via location 'file:/tmp/config-repo-37432486749680514/'
