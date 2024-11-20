@@ -1,6 +1,8 @@
 package com.microservice.demo.elastic.config;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.json.jackson.JacksonJsonpMapper;
+import co.elastic.clients.transport.rest_client.RestClientTransport;
 import com.microservices.demo.config.ElasticConfigData;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
@@ -27,9 +29,9 @@ public class ElasticsearchConfig {
     }
 
     @Bean
-    public RestHighLevelClient elasticsearchClient() {
+    public RestClient elasticRestClient() {
         UriComponents serverUri = UriComponentsBuilder.fromHttpUrl(elasticConfigData.getConnectionUrl()).build();
-        RestClientBuilder builder = RestClient.builder(new HttpHost(
+        return RestClient.builder(new HttpHost(
                 Objects.requireNonNull(serverUri.getHost()),
                 serverUri.getPort(),
                 serverUri.getScheme()
@@ -37,12 +39,19 @@ public class ElasticsearchConfig {
                 requestConfigBuilder
                         .setConnectTimeout(elasticConfigData.getConnectionTimeout())
                         .setSocketTimeout(elasticConfigData.getSocketTimeout())
-        );
-
-        return new RestHighLevelClient(builder);
+        ).build();
     }
 
-    public ElasticsearchOperations elasticsearchTemplate() {
-        return null;
+    @Bean
+    public ElasticsearchTemplate elasticsearchTemplate() {
+
+        ElasticsearchClient elasticsearchClient = new ElasticsearchClient(
+                new RestClientTransport(
+                        elasticRestClient(),
+                        new JacksonJsonpMapper()
+                )
+        );
+
+        return new ElasticsearchTemplate(elasticsearchClient);
     }
 }
